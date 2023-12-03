@@ -1,18 +1,21 @@
 /* Fonts */
 
 @font-face {
+  font-display: swap;
   font-family: ClarityCity;
   font-weight: 400;
   src: local("ClarityCity Regular"), local("ClarityCity-Regular"), url(/static/fonts/ClarityCity-Regular.woff2);
 }
 
 @font-face {
+  font-display: swap;
   font-family: ClarityCity;
   font-weight: 700;
   src: local("ClarityCity Bold"), local("ClarityCity-Bold"), url(/static/fonts/ClarityCity-Bold.woff2);
 }
 
 @font-face {
+  font-display: swap;
   font-family: ForkAwesome;
   src: local("ForkAwesome"), url(/static/fonts/forkawesome-webfont.woff2);
 }
@@ -124,6 +127,7 @@ ul {
 #mail::before {
   content: "\f003";
   font-size: 2rem;
+  padding: 0;
 }
 
 
