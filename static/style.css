@@ -1,0 +1,138 @@
+/* Fonts */
+
+@font-face {
+  font-family: ClarityCity;
+  font-weight: 400;
+  src: local("ClarityCity Regular"), local("ClarityCity-Regular"), url(/static/fonts/ClarityCity-Regular.woff2);
+}
+
+@font-face {
+  font-family: ClarityCity;
+  font-weight: 700;
+  src: local("ClarityCity Bold"), local("ClarityCity-Bold"), url(/static/fonts/ClarityCity-Bold.woff2);
+}
+
+@font-face {
+  font-family: ForkAwesome;
+  src: local("ForkAwesome"), url(/static/fonts/forkawesome-webfont.woff2);
+}
+
+
+/* Variables */
+
+:root {
+  --black: #333;
+  --grey: #f2f2f1;
+  --red: #e8403a;
+  --white: #fff;
+}
+
+
+/* Style */
+
+html {
+  background: var(--black);
+  color: var(--grey);
+  font-family: ClarityCity, sans-serif;
+}
+
+body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+
+a {
+  color: var(--red);
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 150px;
+  margin-top: 15vh;
+  width: 150px;
+}
+
+p {
+  text-align: center;
+}
+
+li {
+  border: 1px solid var(--red);
+  list-style: none;
+  margin: 1em 0;
+  text-align: center;
+  transition: 0.3s;
+}
+
+li a {
+  display: block;
+  padding: 1.25em 0;
+}
+
+li:hover {
+  background: var(--red);
+}
+
+li:hover a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+ul {
+  margin: 0 0 1em 0;
+  padding: 0;
+  width: 40%;
+}
+
+::before {
+  font-family: ForkAwesome;
+  padding-right: 0.5em;
+}
+
+#bluesky::before {
+  content: "🟦";
+}
+
+#github::before {
+  content: "\f09b";
+}
+
+#linkedin::before {
+  content: "\f0e1";
+}
+
+#twitter::before {
+  content: "\f099";
+}
+
+#mail:hover {
+  color: var(--white);
+  text-decoration: none;
+}
+
+#mail::before {
+  content: "\f003";
+  font-size: 2rem;
+}
+
+
+@media (max-width: 920px) {
+  body {
+    margin: 0 0.5em;
+  }
+
+  ul {
+    width: 100%;
+  }
+}
