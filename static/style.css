@@ -154,4 +154,8 @@ ul {
   ul {
     width: 100%;
   }
+
+  #talks ul {
+    width: 95%;
+  }
 }
