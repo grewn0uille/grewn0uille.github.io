@@ -70,28 +70,6 @@ p {
   text-align: center;
 }
 
-li {
-  border: 1px solid var(--red);
-  list-style: none;
-  margin: 1em 0;
-  text-align: center;
-  transition: 0.3s;
-}
-
-li a {
-  display: block;
-  padding: 1.25em 0;
-}
-
-li:hover {
-  background: var(--red);
-}
-
-li:hover a {
-  color: var(--white);
-  text-decoration: none;
-}
-
 ul {
   margin: 0 0 1em 0;
   padding: 0;
@@ -101,6 +79,36 @@ ul {
 ::before {
   font-family: ForkAwesome;
   padding-right: 0.5em;
+}
+
+#index li {
+  border: 1px solid var(--red);
+  list-style: none;
+  margin: 1em 0;
+  text-align: center;
+  transition: 0.3s;
+}
+
+#index li a {
+  display: block;
+  padding: 1.25em 0;
+}
+
+#index li:hover {
+  background: var(--red);
+}
+
+#index li:hover a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+#talks h1 a {
+  color: inherit;
+}
+
+#talks li {
+  line-height: 2.5;
 }
 
 #bluesky::before {
