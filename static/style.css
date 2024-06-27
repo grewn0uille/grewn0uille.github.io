@@ -119,6 +119,10 @@ ul {
   content: "\f09b";
 }
 
+#instagram::before {
+  content: "\f16d";
+}
+
 #linkedin::before {
   content: "\f0e1";
 }
