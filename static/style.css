@@ -24,18 +24,19 @@
 /* Variables */
 
 :root {
-  --black: #333;
-  --grey: #f2f2f1;
+  --azure: #eafdf8;
+  --purple: #1f0322;
+  --purple-light: #7d6b91;
   --red: #e8403a;
-  --white: #fff;
+  --yellow: #e2c044;
 }
 
 
 /* Style */
 
 html {
-  background: var(--black);
-  color: var(--grey);
+  background: var(--azure);
+  color: var(--purple);
   font-family: ClarityCity, sans-serif;
 }
 
