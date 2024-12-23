@@ -2,22 +2,43 @@
 
 @font-face {
   font-display: swap;
-  font-family: ClarityCity;
+  font-family: WorkSans;
+  font-weight: 200;
+  src: local("WorkSans ExtraLight"), local("WorkSans-ExtraLight"), url(fonts/WorkSans-ExtraLight.woff2);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: WorkSans;
+  font-weight: 300;
+  src: local("WorkSans Light"), local("WorkSans-Light"), url(fonts/WorkSans-Light.woff2);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: WorkSans;
   font-weight: 400;
-  src: local("ClarityCity Regular"), local("ClarityCity-Regular"), url(/static/fonts/ClarityCity-Regular.woff2);
+  src: local("WorkSans Regular"), local("WorkSans-Regular"), url(fonts/WorkSans-Regular.woff2);
 }
 
 @font-face {
   font-display: swap;
-  font-family: ClarityCity;
-  font-weight: 700;
-  src: local("ClarityCity Bold"), local("ClarityCity-Bold"), url(/static/fonts/ClarityCity-Bold.woff2);
+  font-family: WorkSans;
+  font-weight: 800;
+  src: local("WorkSans ExtraBold"), local("WorkSans-ExtraBold"), url(fonts/WorkSans-ExtraBold.woff2);
 }
 
 @font-face {
   font-display: swap;
-  font-family: ForkAwesome;
-  src: local("ForkAwesome"), url(/static/fonts/forkawesome-webfont.woff2);
+  font-family: WorkSans;
+  font-weight: 900;
+  src: local("WorkSans Black"), local("WorkSans-Black"), url(fonts/WorkSans-Black.woff2);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: NerdFont;
+  src: local("NerdFont Regular"), url(fonts/SymbolsNerdFont-Regular.ttf);
 }
 
 
@@ -37,7 +58,7 @@
 html {
   background: var(--azure);
   color: var(--purple);
-  font-family: ClarityCity, sans-serif;
+  font-family: WorkSans, sans-serif;
 }
 
 body {
@@ -78,7 +99,7 @@ ul {
 }
 
 ::before {
-  font-family: ForkAwesome;
+  font-family: NerdFont;
   padding-right: 0.5em;
 }
 
@@ -113,7 +134,7 @@ ul {
 }
 
 #bluesky::before {
-  content: "🟦";
+  content: "\e28e";
 }
 
 #github::before {
