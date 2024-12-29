@@ -49,6 +49,7 @@
   --purple: #1f0322;
   --purple-light: #7d6b91;
   --red: #e8403a;
+  --white: #ffffff;
   --yellow: #e2c044;
 }
 
@@ -56,7 +57,7 @@
 /* Common */
 
 html {
-  background: var(--azure);
+  background: var(--white);
   color: var(--purple);
   font-family: WorkSans, sans-serif;
   font-size: 14pt;
@@ -64,6 +65,12 @@ html {
 
 body {
   margin: 0;
+
+  > article {
+    margin: auto;
+    padding-top: 5rem;
+    width: 50vw;
+  }
 }
 
 ::before {
@@ -76,8 +83,8 @@ a {
   text-decoration: none;
 }
 
-article {
-  padding-top: 5rem;
+p {
+  line-height: 1.4;
 }
 
 li {
@@ -92,13 +99,14 @@ ul {
 /* Nav */
 
 nav {
-  background: var(--azure);
+  background: var(--white);
   border-bottom: 1px solid var(--purple-light);
   display: flex;
   height: 4.1rem;
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 2;
 
   h1 {
     align-self: center;
@@ -132,10 +140,124 @@ nav {
       }
 
       &:hover {
-        border-bottom: 2px solid var(--red);
+        border-bottom: 1px solid var(--red);
       }
     }
   }
+}
+
+
+/* Articles */
+
+#articles {
+  a {
+    color: var(--purple);
+  }
+
+  article {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  section {
+    border: 1px solid var(--purple-light);
+    box-shadow: 3px 3px var(--purple-light);
+    padding: 0.7em 2em;
+    position: relative;
+    transition: all 0.7s;
+
+    &:has(a:hover) {
+      border-color: var(--red);
+      box-shadow: 3px 3px var(--red);
+    }
+
+    &::before {
+      color: var(--purple-light);
+      font-family: inherit;
+      font-size: 0.7em;
+      position: absolute;
+      right: 1em;
+    }
+
+    &[lang="fr"]::before {
+      content: "fr";
+    }
+
+    &[lang="en"]::before {
+      content: "en";
+    }
+  }
+
+  h3 {
+    margin-bottom: 0.75rem;
+  }
+
+  .description {
+    margin-top: 0.75rem;
+  }
+
+  .info, .tags {
+    color: var(--purple-light);
+    font-size: 0.7em;
+    margin: 0;
+
+    li {
+      display: inline-block;
+    }
+  }
+
+  .tags {
+    li {
+      border: 1px solid var(--purple-light);
+      border-radius: 0.7em;
+      padding: 0.2em 0.35em;
+    }
+  }
+
+  .info {
+    bottom: 0.5em;
+    position: absolute;
+    right: 1em;
+
+    li {
+      &:first-of-type::after {
+        content: "·";
+        margin-left: 0.5em;
+      }
+    }
+  }
+}
+
+
+/* Contact */
+
+#contact {
+  li {
+    display: inline-block;
+
+    &:not(:first-of-type) {
+      margin-left: 2em;
+    }
+  }
+
+  a {
+    padding-bottom: 0.3em;
+
+    &:hover {
+      border-bottom: 1px solid var(--red);
+    }
+  }
+}
+
+
+/* Footer */
+
+footer {
+  border-top: 1px solid var(--purple-light);
+  font-size: 0.7em;
+  margin-top: 2rem;
+  text-align: center;
 }
 
 
