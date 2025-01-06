@@ -49,7 +49,7 @@
   --purple: #1f0322;
   --purple-light: #7d6b91;
   --red: #e8403a;
-  --white: #ffffff;
+  --white: #ffeeee;
   --yellow: #e2c044;
 }
 
@@ -89,7 +89,7 @@ a {
   text-decoration: none;
 }
 
-#about, #talk, #contact {
+#about, #talks, #contact {
   a {
     text-decoration: underline var(--yellow);
     transition: all 0.7s;
