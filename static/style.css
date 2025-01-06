@@ -150,6 +150,12 @@ nav {
       }
     }
   }
+
+  @media (max-width: 1200px) {
+    ul {
+      display: none;
+    }
+  }
 }
 
 
@@ -268,10 +274,12 @@ nav {
 
 #contact {
   li {
-    display: inline-block;
+    @media (min-width: 1201px) {
+      display: inline-block;
 
-    &:not(:first-of-type) {
-      margin-left: 2em;
+      &:not(:first-of-type) {
+        margin-left: 2em;
+      }
     }
   }
 
