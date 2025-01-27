@@ -352,26 +352,26 @@ footer {
 
 /* Icons */
 
-#bluesky::before {
+.bluesky::before {
   content: "\e28e";
 }
 
-#github::before {
+.github::before {
   content: "\f09b";
 }
 
-#instagram::before {
+.instagram::before {
   content: "\f16d";
 }
 
-#linkedin::before {
+.linkedin::before {
   content: "\f0e1";
 }
 
-#twitter::before {
+.twitter::before {
   content: "\f099";
 }
 
-#mail::before {
+.mail::before {
   content: "\f003";
 }
